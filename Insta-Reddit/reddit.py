@@ -7,7 +7,7 @@ import requests
 import os
 import shutil
 
-driver = webdriver.Chrome(executable_path="C:\\Users\\Zwanzig's PC\\Downloads\\chromedriver_win32\\0.00.exe")  # Adjust according to your browser "https://www.reddit.com/r/funnyvideos/" driver = webdriver.Chrome(ChromeDriverManager().install())
+driver = webdriver.Chrome(ChromeDriverManager().install())  # Adjust according to your browser "https://www.reddit.com/r/funnyvideos/" driver = webdriver.Chrome(ChromeDriverManager().install()) executable_path="C:\\Users\\Zwanzig's PC\\Downloads\\chromedriver_win32\\0.00.exe"
 
 def download_file(url, local_filename,folder):
     """

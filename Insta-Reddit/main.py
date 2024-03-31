@@ -19,13 +19,13 @@ def setup(url,folder):
     return list_video
 
 list_video = setup("https://www.reddit.com/r/funnyvideos/",
-                   "C:\\Users\\Zwanzig's PC\\Downloads\\Short_form_conten\\videos")
+                   ".\\videos")
 
 def task():
     """
     Processes throught the list_video and logins and posts and captions then on instagram
     """
-    filename = "C:\\Users\\Zwanzig's PC\\Downloads\\Short_form_conten\\videos"
+    filename = ".\\videos"
     if len(list_video):
         list_video = reddit.clean_up_folder(filename
                                             ,list_video)
@@ -38,13 +38,13 @@ def task():
 
 
 list_video2 = setup("https://www.reddit.com/r/FunnyAnimals/",
-                    "C:\\Users\\Zwanzig's PC\\Downloads\\Short_form_conten\\videos2")
+                    ".\\videos2")
 
 def task2():
     """
     SAME AS TASK()
     """
-    filename ="C:\\Users\\Zwanzig's PC\\Downloads\\Short_form_conten\\videos2"
+    filename =".\\videos2"
     if len(list_video2):
         list_video2 = reddit.clean_up_folder(filename,
                                              list_video2)
